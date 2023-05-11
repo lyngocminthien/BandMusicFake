@@ -1,0 +1,120 @@
+
+/* NOTE : Nên dùng đơn vị em thay cho px trong responsive */
+/* Dùng đơn vị em thì không bị lỗi trên nhiều trình duyệt */
+
+
+/* PC : >= 1024px = 64em */
+@media (min-width: 64em) {}
+
+/* Tablet : >=740 & <1024 */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {}
+
+
+/* Tablet & Mobile : <= 1023 */
+@media (max-width: 63.9375em) {
+    
+    .btn {
+        padding: 15px 16px;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .contact-submit-btn {
+        font-size: 16px;
+    }
+
+    #footer .social-list {
+        font-size: 32px;
+    }
+
+    #footer .social-list a {
+        margin: 0 8px;
+    }
+
+    #footer .copyright a {
+        padding: 8px 0;
+        font-size: 24px;
+        display: inline-block;
+    }
+}
+
+
+/* Mobile : <= 739px */
+@media (max-width: 46.1875em) {
+    
+    .s-full-width {
+        width: 100% !important;
+    }
+
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-mt-8px {
+        margin-top: 8px !important;
+    }
+    
+    #header {
+        /* Ẩn đi các thành phần bị lố ra khỏi thằng cha  */
+        overflow: hidden;
+    }
+    
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        /* trả position về giá trị mặc định */
+        position: initial;
+        background-color: #000;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #content .member-item {
+        width: 100% ;
+        margin-top: 32px;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    #contact .contact-form {
+        margin-top: 32px;
+    }
+}
